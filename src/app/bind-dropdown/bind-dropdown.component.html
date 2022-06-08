@@ -1,0 +1,10 @@
+<div >
+    <select [(ngModel)]="employeeSelected" (ngModelChange)="onEmployeeSelected($event)">
+        <option *ngFor="let item of employee" [value]="item.Name">
+            {{item.Name}}
+        </option>   
+    </select>
+    <br>
+    <h3>Selected Value is {{employeeSelected}}</h3>
+
+</div>

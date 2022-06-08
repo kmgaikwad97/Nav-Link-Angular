@@ -1,72 +1,112 @@
 <div class="container">
-  <button type="button" (click)="changeData('Primary')" class="btn active btnLink btn-primary">Primary</button>
-  <button type="button" (click)="changeData('Secondary')" class="btn btnLink btn-secondary">Secondary</button>
-  <button type="button" (click)="changeData('Success')" class="btn btnLink btn-success">Success</button>
-  <button type="button" (click)="changeData('Danger')" class="btn btnLink btn-danger">Danger</button>
+  <button type="button" (click)="changeData('Primary')"
+    class="btn active btnLink btn-primary mx-2 my-2">Primary</button>
+  <button type="button" (click)="changeData('Secondary')" class="btn btnLink btn-secondary mx-2 my-2">Secondary</button>
+  <button type="button" (click)="changeData('Success')" class="btn btnLink btn-success mx-2 my-2">Success</button>
+  <button type="button" (click)="changeData('Danger')" class="btn btnLink btn-danger mx-2 my-2">Danger</button>
+
+
+  <button type="button" (click)="changeData('Form')" class="btn btnLink btn-dark mx-2 my-2">Form</button>
+
+  <!-- <button type="button"  class="btn btnLink btn-danger mx-2 my-2">View PDF</button> -->
+
+  <button type="button" class="btn btnLink btn-primary" (click)="changeData('pdf')" data-bs-toggle="modal"
+    data-bs-target="#exampleModal">Open PDF</button>
+
+  <button type="button" (click)="changeData('News')" class="btn btnLink btn-dark mx-2 my-2">News</button>
+
+  <button type="button" (click)="changeData('Bind')" class="btn btnLink btn-dark mx-2 my-2" >Bind</button>
+  <!--  -->
+  <button type="button" (click)="changeData('UploadPhoto')" class="btn btnLink btn-danger mx-2 my-2" >Upload Avtar</button>
+
 
   <!-- primary -->
   <div class="row mt-4" *ngIf="primary">
-    <div class="col-md-3 mt-3">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
-    <div class="col-md-3 mt-3">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
-    <div class="col-md-3 mt-3">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
-    <div class="col-md-3 mt-3">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
-    <div class="col-md-3 mt-3">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
-    <div class="col-md-3 mt-3">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
-    <div class="col-md-3 mt-3">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
-    <div class="col-md-3 mt-3">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/7173203/pexels-photo-7173203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
@@ -80,65 +120,89 @@
   <div class="row mt-4" *ngIf="secondary">
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/12106929/pexels-photo-12106929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
@@ -151,65 +215,89 @@
   <div class="row mt-4" *ngIf="success">
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11920150/pexels-photo-11920150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
@@ -222,65 +310,89 @@
   <div class="row mt-4" *ngIf="danger">
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
     <div class="col-md-3 mt-3">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <img
+          src="https://images.pexels.com/photos/11506984/pexels-photo-11506984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
     </div>
@@ -292,4 +404,92 @@
 
 
 
+
+
+  <!-- Form Data Using Array -->
+  <div class="row mt-4" *ngIf="form">
+    <div class="col-lg-12">
+      <h1>Form using Array</h1>
+
+      <form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+        <input type="text" ngModel name="name" placeholder="Enter Your name">
+        <br>
+        <input type="text" ngModel name="email" placeholder="Enter Your Email">
+        <br>
+        <input type="text" ngModel name="password" placeholder="Enter Your Password">
+        <br>
+        <button>Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container p-5" *ngIf="pdf">
+    <!-- Button trigger modal -->
+
+  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-danger" id="exampleModalLabel">PDF</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body">
+
+
+            <embed src="assets/pdf/dummy.pdf#toolbar=0" type="application/pdf" width="100%" height="600px">
+
+            <ul *ngFor="let items of usersfile">
+              <li>{{items.name}}</li>
+              <li>{{items.email}}</li>
+              <li>{{items.password}}</li>
+            </ul>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 </div>
+
+
+
+
+
+<!-- News API -->
+
+<app-newsapi *ngIf="News"></app-newsapi>
+
+
+<!-- Bind  -->
+<app-bind-dropdown *ngIf="bind"></app-bind-dropdown>
+
+
+
+<!-- Upload New Photo -->
+
+<app-upload-photo *ngIf="uploadphoto"></app-upload-photo>

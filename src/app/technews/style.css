@@ -1,0 +1,21 @@
+.input-hidden {
+    /* For Hiding Radio Button Circles */
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="radio"]:checked+label>img {
+    border: 1px solid rgb(157, 255, 0);     
+    box-shadow: 0 0 3px 3px #9e00e2;
+}
+
+input[type="radio"]+label>img {
+    border: 1px rgb(0, 0, 0);
+    padding: 10px;
+
+    transition: 500ms all;
+}
+
+input[type="radio"]:checked+label>img {
+    transform: rotateZ(-10deg) rotateX(10deg);
+}

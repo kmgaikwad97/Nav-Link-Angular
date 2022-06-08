@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <img src="{{imgvalue}}" width="50%" class="img-fluid" alt="">
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <button type="button" class="btn btnLink btn-primary d-none me-2 mb-4 d-sm-inline"
+            data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Upload new photo
+          </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-info" id="exampleModalLabel">Select Avtar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>  
+        <div class="modal-body">
+  
+
+
+            
+          <div class="container text-center avtar-img-container">
+            <div class="row">
+              <div class="col-4" *ngFor="let avtarimg of avtarData; let i = index">
+  
+                <input class="avtar-value" checked id="{{avtarimg.id}}" type="radio" name="avtar" value="{{avtarimg.value}}" (click)="avtarChange($event,i)"> <br>
+                <label class="avatar-name" for="{{avtarimg.id}}">
+                  <img src="{{avtarimg.img}}" style="width:130px;border-radius:20px;" class="avtar-img-no-border img-fluid" alt="">
+                </label>
+              </div>
+            </div>
+            <br>
+            <p class="result">Selected Avtar: {{selectedAvtar}} </p>
+  
+          </div>
+  
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" (click)="saveCahanges()">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
